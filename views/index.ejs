@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Real-Time Stock Portfolio Tracker</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Chart.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Real-Time Stock Portfolio Tracker</h1>
+  </header>
+
+  <main>
+    <!-- Portfolio Management Section -->
+    <section class="portfolio">
+      <h2>Your Portfolio</h2>
+      <form id="addStockForm">
+        <input type="text" id="stockSymbol" placeholder="Enter stock symbol" required>
+        <button type="submit">Add Stock</button>
+      </form>
+      <table id="portfolioTable">
+        <thead>
+          <tr>
+            <th>Symbol</th>
+            <th>Price</th>
+            <th>Change</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Example EJS loop for stocks -->
+          <% stocks.forEach(function(stock) { %>
+            <tr data-symbol="<%= stock.symbol %>">
+              <td>
+                <%= stock.symbol %>
+              </td>
+              <td>
+                <%= stock.price %>
+              </td>
+              <td>
+                <%= stock.change %>
+              </td>
+              <td>
+                <button class="removeStock" data-symbol="<%= stock.symbol %>">Remove</button>
+              </td>
+            </tr>
+            <% }); %>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Trend Visualization Section -->
+    <section class="trend-chart">
+      <h2>Stock Trends</h2>
+      <canvas id="stockChart"></canvas>
+    </section>
+  </main>
+
+  <!-- Link to your main JS file -->
+  <script src="/js/main.js"></script>
+</body>
+
+</html>

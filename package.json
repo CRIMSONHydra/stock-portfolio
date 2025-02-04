@@ -1,0 +1,25 @@
+{
+  "name": "stock-portfolio",
+  "version": "1.0.0",
+  "description": "real time stock market portfolio tracker and analyser",
+  "homepage": "https://github.com/CRIMSONHydra/stock-portfolio#readme",
+  "bugs": {
+    "url": "https://github.com/CRIMSONHydra/stock-portfolio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CRIMSONHydra/stock-portfolio.git"
+  },
+  "license": "ISC",
+  "author": "naverdo sandeep",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "run dev",
+    "start": "nodemon app"
+  },
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2"
+  }
+}

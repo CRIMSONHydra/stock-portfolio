@@ -1,0 +1,98 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header Styles */
+header {
+  background-color: #35424a;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Main Container */
+main {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Portfolio Section Styles */
+.portfolio {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.portfolio h2 {
+  margin-top: 0;
+}
+
+/* Add Stock Form Styles */
+#addStockForm {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+#addStockForm input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex: 1;
+}
+
+#addStockForm button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #35424a;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+/* Portfolio Table Styles */
+#portfolioTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#portfolioTable th,
+#portfolioTable td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+#portfolioTable th {
+  background-color: #35424a;
+  color: #fff;
+}
+
+/* Trend Chart Section Styles */
+.trend-chart {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.trend-chart h2 {
+  margin-top: 0;
+}
+
+/* Remove Stock Button */
+.removeStock {
+  padding: 5px 10px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
